@@ -37,9 +37,24 @@ reader.question("What would you like to calculate?", function(input){
 	if (mathSymbol === "sqrt"){
 		console.log(Math.sqrt(num1));
 	}
-	if (mathSymbol === "**"){
-		console.log(num1 ** .5);
+	if (mathSymbol === "^2"){
+		console.log(num1 ** 2);
 	}
+
+	if (mathSymbol === "^3"){
+		console.log(num1 ** 3);
+	}
+
+	if (mathSymbol === "**"){
+		console.log(num1 ** num2);
+	}
+
+	if (mathSymbol === "%"){
+		console.log(num1 % num2);
+	}
+
+
+	// if (mathSymbol ===)
 	// This line closes the connection to the command line interface.
 	reader.close()
 
